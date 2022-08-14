@@ -41,6 +41,7 @@ const Welcome = ({navigation}) => {
                         title='Next'
                         name='started'
                         onPress={() => {navigation.replace("Home")}}
+                        textID = "nextButton"
                     />
                 </View>
             </Animatable.View>
