@@ -6,6 +6,7 @@ describe('Welcome Screen', () => {
     it('should go to home screen if button on welcome screen clicked', () =>{
         const navigation = {navigate:() => {}}
         const page = render(<Welcome />);
+        spyOn(navigation, 'navigate')
 
         const nextButton = page.getByTextId('nextButton');
 
