@@ -2,8 +2,6 @@ import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient'
 import { colors } from '../../../constant/colors'
-import Icon from 'react-native-vector-icons/MaterialIcons'
-
 
 const ButtonLinearGradient = ({ title, ...rest }) => {
     return (

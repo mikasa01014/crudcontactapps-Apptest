@@ -14,9 +14,7 @@ const Splash = ({navigation}) => {
     const Footer = () => {
         return (
             <View style={{ marginBottom: 10, alignItems: 'center', justifyContent: 'center' }}>
-                <Text style={[styles.textSign, {
-                    color: 'red'
-                }]}>Created By Rizky Aditya Maulana</Text>
+                <Text style={styles.textSign}>Created By Rizky Aditya Maulana</Text>
 
             </View>
         )
@@ -25,9 +23,9 @@ const Splash = ({navigation}) => {
     return (
         <ImageBackground source={SplashBackground} style={styles.background}>
             <StatusBar barStyle="light-content" backgroundColor="transparent" translucent={true}/>
-            <View style={styles.textSign}>
-                <Text>CRUD Contact App</Text>
-            </View>
+            <Text style={[styles.textSign, {
+                    color: colors.default
+                }]}>Dropdown Indonesian Region App</Text>
 
             <Footer />
         </ImageBackground>

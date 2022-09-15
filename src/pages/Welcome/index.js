@@ -31,10 +31,8 @@ const Welcome = ({navigation}) => {
                 style={styles.footer}
                 animation='fadeInUpBig'
             >
-                <View style={styles.logo2Content}>
-                    <Text style={styles.textLogo}>CRUD Contact App</Text>
-                </View>
-                <Text style={styles.title}>Hello, This is a CRUD Contatct App</Text>
+                <Text style={styles.title}>Hello, </Text>
+                <Text style={styles.title}>This is a Dropdown of Indonesian Region App</Text>
                 <Text style={styles.text}>Click Next to Go</Text>
                 <View style={styles.button}>
                     <Button type='linear'

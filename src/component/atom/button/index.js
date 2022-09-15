@@ -1,14 +1,9 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import { colors } from '../../../constant';
-import ButtonIcon from './ButtonIcon';
 import ButtonLinearGradient from './LinearGradientButton';
 
 const Button = ({ title, onPress, type, name, style }) => {
-    if(type === 'icon'){
-      return <ButtonIcon name={name} onPress={onPress} style={style}/>
-    };
-
     if(type === 'linear')
     {
         return <ButtonLinearGradient name={name} title={title} onPress={onPress} />
@@ -20,7 +15,7 @@ const Button = ({ title, onPress, type, name, style }) => {
                 style={[styles.signIn, {
                     borderColor: colors.default,
                     borderWidth: 1,
-                    marginTop: 15
+                    marginTop: 15,
                 }]}
                 onPress={onPress}
             >
@@ -48,8 +43,8 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
     signIn: {
-        width: 350,
-        height: 50,
+        width: 400,
+        height: 100,
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 10
